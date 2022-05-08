@@ -1,0 +1,5 @@
+/* Included to make tables more readable in tablenotes.html */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

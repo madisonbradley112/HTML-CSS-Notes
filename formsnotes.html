@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Notes</title>
+</head>
+<body>
+    <main>
+        <!-- The form element is used as a container for many types of input elements. -->
+        <form>
+            <!--
+            label tag defines a label for many form elements. useful for screen readers.
+            Also used to make the clickable region the entire label area.
+             -->
+            <!-- The type label defines the input type. -->
+            <!-- The "for" type should be equal to the "id" type in order to bind them together. -->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <!-- INPUT TYPES -->
+            <hr>
+
+            <!-- Text (use textfield to make it larger -->
+            <label for="textfield">Text Field:</label><br>
+            <input type="text" id="textfield" name="textfield"><br>
+            <hr>
+
+            <!-- Text area (many options) -->
+            <textarea name="message" rows="10" cols="30">Type something here...</textarea>
+
+            <hr>
+            <!-- Radio buttons -->
+            <input type="radio" id="you" name="radioform" value="You">
+            <label for="you">You</label><br>
+            <input type="radio" id="can" name="radioform" value="Can">
+            <label for="can">Can</label><br>
+            <input type="radio" id="make" name="radioform" value="Make">
+            <label for="make">Make</label><br>
+            <input type="radio" id="radio" name="radioform" value="Radio">
+            <label for="radio">Radio</label><br>
+            <input type="radio" id="buttons" name="radioform" value="Buttons">
+            <label for="buttons">Buttons</label><br>
+            <hr>
+
+            <!-- Checkboxes -->
+            <input type="checkbox" id="check" name="checkform" value="Check">
+            <label for="you">Check</label><br>
+            <input type="checkbox" id="these" name="checkform" value="These">
+            <label for="can">These</label><br>
+            <input type="checkbox" id="boxes" name="checkform" value="Boxes">
+            <label for="can">Boxes</label><br>
+            <hr>
+
+            <!-- Drop-down lists using <select> -->
+            <label for="drop">Drop down list</label>
+            <select id="drop" name="drop">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <hr>
+
+            <!-- Use multiple to allow users to check multiple options -->
+            <!-- Use size to show only the first x options -->
+            <label for="drop2">Drop down list with multiple</label>
+            <select id="drop2" name="drop2" multiple>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <hr>
+
+            <!-- Buttons -->
+            <button type="button" onclick="alert('Hello World!')">Click me!</button>
+            <hr>
+
+            <!-- Fieldset groups related data in a form. -->
+            <fieldset>
+                <legend>Fieldset</legend>
+                <button type="button" onclick="alert('Hello World!')">Click me!</button>
+            </fieldset>
+            <hr>
+
+        </form>
+
+        <!-- You can create a form with a submit button that does something upon submission. -->
+        <form action="/fakejs.js">
+            <label for="submit">Script executed on submission:</label><br>
+            <input type="text" id="submit" name="submit"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>

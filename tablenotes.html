@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Notes</title>
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+    <main>
+        <!-- A table consists of table cells inside rows and columns. -->
+        <!-- By default it has no border, but we will adjust this -->
+        <table>
+            <tr>
+                <th>These</th>
+                <th>Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr>
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- We can change the table sizes -->
+        <table style="width: 100%">
+            <tr>
+                <th>These</th>
+                <th>Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr>
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- We can also adjust column sizes -->
+        <table style="width: 100%">
+            <tr>
+                <th>These</th>
+                <th style="width: 70%">Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr>
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Or row height -->
+        <table style="width: 100%">
+            <tr>
+                <th>These</th>
+                <th>Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr style="height: 100px">
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Vertical headings done by having first td be a th instead for each row -->
+        <table>
+            <tr>
+                <th>We</th>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <th>Can have</th>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <th>Vertical headings</th>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- We can also have a header spread out over many columns -->
+        <table style="width: 100%">
+            <tr>
+                <th colspan="2">These Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr style="height: 100px">
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Or many rows -->
+        <table>
+            <tr>
+                <th rowspan="2">These Are</th>
+                <td>Table Headings</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Or we can have table caption -->
+        <table>
+            <caption>Example table</caption>
+            <tr>
+                <th>These</th>
+                <th>Are</th>
+                <th>Table Headings</th>
+            </tr>
+            <tr>
+                <td>These</td>
+                <td>Are</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        <hr>
+
+
+
+    </main>
+</body>
+</html>

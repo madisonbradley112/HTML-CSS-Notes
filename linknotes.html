@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Notes</title>
+</head>
+<body>
+    <main>
+        <!--
+        Link notes and testing
+        The HTML <a> tag defines a hyperlink. It has the following syntax:
+        <a href="url">link text</a>
+        -->
+
+        <!-- A link's target indicates where it is opened. -->
+        <!-- A _blank target indicates it is opened in a new tab or window. -->
+        <a href="https://google.ca" target="_blank">This opens in new tab.</a>
+
+        <!-- A _self target indicates it is opened in the same tab -->
+        <a href="https://google.ca" target="_self">This opens in the same tab.</a>
+
+        <!--
+        An absolute URL is a full address, like above.
+        A relative URL is a local link (within the same website) and excludes the "https://www"
+        -->
+
+        <!-- We can use images as links. -->
+        <a href="https://google.ca">
+            <img src="https://mymodernmet.com/wp/wp-content/uploads/archive/OQIVyXMLyWteDGUbQkf7_monkey.jpg">
+        </a>
+
+        <!-- We can link to an email address -->
+        <a href="mailto:someone@example.com">Send email</a>
+
+        <!-- The title of the link is what appears as the mouse over -->
+        <a href="https://google.ca" title="Go to Google">Mouse over this</a>
+
+        <!-- We can jump to different parts of the page by using "bookmarks" -->
+        <h2 id="bookmark">This will be jumped to when we click the link.</h2>
+        <a href="#bookmark">This jumps to the bookmark.</a>
+    </main>
+
+</body>
+</html>

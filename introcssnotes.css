@@ -1,0 +1,69 @@
+/*
+CSS elements have a few components:
+In the example below, h1 is the selector.
+color and font-size are properties.
+blue and 12px are values.
+*/
+
+h1 {
+    color: blue;
+    font-size: 12px;
+}
+
+/*
+There are different types of selectors that select different things:
+*/
+
+/* This is an example of an element selector. It simply selects HTML elements based on element name. */
+h1 {
+    color: blue;
+    font-size: 12px;
+}
+
+/* This is an example of an id selector. It selects HTML elements with the id profile. */
+#profile {
+    color: blue;
+    font-size: 12px;
+}
+
+/* This is an example of a class selector. It selects HTML elements with the class user. */
+.user {
+    color: blue;
+    font-size: 12px;
+}
+
+/* This is an example of a specified class selector. It selects <p> els with the class user. */
+p.user {
+    color: blue;
+    font-size: 12px;
+}
+
+/* The * selector selects all of the elements on the page. */
+* {
+    color: blue;
+    font-size: 12px;
+}
+
+/* You can select multiple elements by grouping them together. */
+
+h1, h2, p {
+    color: blue;
+    font-size: 12px;
+}
+
+/* Multiple Style Sheets notes */
+
+/*
+Assume an an external stylesheet has conflicting styles with an internal stylesheet (both inside head element).
+Then, the value from the last read stylesheet will be used.
+If the internal style is defined after the link to the external stylesheet, then the internal one will be used.
+*/
+
+/*
+Cascading order:
+What style will be used there is more than one specified for an element?
+All styles in a page will "cascade" into a new virtual stylesheet where number 1 has the highest priority.
+1. Inline style (inside HTML element)
+2. External and internal stylesheets (in the head section)
+3. Browser default
+*/
