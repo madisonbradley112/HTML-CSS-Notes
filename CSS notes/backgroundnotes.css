@@ -1,0 +1,74 @@
+/* Background notes CSS */
+
+/* Background color of a page is set like this: */
+body {
+    background-color: blue;
+}
+
+/* Opacity is a percentage - the lower the value, the more transparent */
+body {
+    background-color: blue;
+    opacity: 0.3;
+}
+
+/*
+    Background image specifies the image to use as the background.
+    If used as body, then it sets for whole site. But, you can also specify for certain elements.
+*/
+body {
+    background-image: url("image.png")
+}
+
+/* By default, the image is repeated horizontally and vertically. You can specify to only repeat in one direction */
+body {
+    background-image: url("image.png");
+    background-repeat: repeat-x;
+}
+
+/* To show background only once, use no-repeat */
+body {
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+}
+
+/* background-position property is used to specify the position of the background image. */
+body {
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* background-attachment property is used to specify whether the background image should scroll or be fixed */
+
+/* fix background image (when user scrolls it stays in place) */
+body {
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+/* able to scroll past the image */
+body {
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+/* Instead of using multiple properties, you can use the shorthand background property. */
+/*
+    The order of the property values is as follows (it does not matter if one is missing,
+    as long as the rest follow the order):
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+
+*/
+
+body {
+    background: blue url("image.png") no-repeat scroll right top;
+}
