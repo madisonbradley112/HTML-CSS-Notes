@@ -1,0 +1,27 @@
+body {
+    background-image: url("repeatingbackground.jpeg");
+    background-repeat: repeat;
+}
+
+img {
+    margin: auto;
+    max-width: 60%;
+    max-height: 100%;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 50%;
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+    color: darkcyan;
+}
+
+em {
+    color: red;
+}
